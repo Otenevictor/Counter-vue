@@ -1,5 +1,5 @@
 # Link to the Exams url
-counter-vue-7u4h.vercel.app
+https://counter-vue-7u4h.vercel.app
 # testing-vue
 
 This template should help get you started developing with Vue 3 in Vite.
