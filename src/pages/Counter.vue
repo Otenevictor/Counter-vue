@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <div :style="{color:$store.state.colorCode}" class="counter"> counter:
+        <div class="counter"> counter:
             {{ $store.state.counter }}
         </div>
         <div class="counter-squared"> {{ $store.state.counter }}

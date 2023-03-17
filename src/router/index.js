@@ -6,16 +6,16 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Home
     },
     {
       path: '/counter',
-      name: 'counter',
+      name: 'Counter',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../pages/counter.vue')
+      component: () => import('../pages/Counter.vue')
     },
     {
       path: '/:pathMatch(.*)*',
