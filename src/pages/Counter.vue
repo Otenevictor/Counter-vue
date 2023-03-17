@@ -1,18 +1,17 @@
  <template>
     <div class="counter">
-        <div :style="{color:blue}" class="counternum"> Counter:
+        <div class="counternum"> Counter:
             {{ $store.state.counter }}
         </div>
-        <div class="cube-root"> Cube root: {{ $store.state.counter }}
-        <sup>3</sup> = {{ $store.getters.counterSquared }}
+        <div class="cube-root  "> Cube root: {{ $store.state.counter }}<sup class="text-danger">3</sup> = {{ $store.getters.counterSquared }}
     </div>
     <div class="setvalue-container">
       <input type="number" v-model="value" />
-      <button class="set-value" @click="setValue(value)">SET VALUE</button>    </div>
+      <button class="set-value text-primary" @click="setValue(value)">SET VALUE</button>    </div>
     <div class="btn">
-        <button class="btn-click" @click ="$store.dispatch ('decreaseCounter')">-</button>
-        <button class="btn-click" @click ="$store.dispatch ('reset')">reset</button>
-        <button class="btn-click" @click ="$store.dispatch ('increaseCounter')">+</button>
+        <button class="btn-click text-primary" @click ="$store.dispatch ('decreaseCounter')">-</button>
+        <button class="btn-click  red" @click ="$store.dispatch ('reset')">reset</button>
+        <button class="btn-click text-primary" @click ="$store.dispatch ('increaseCounter')">+</button>
     </div>
      
 
@@ -52,7 +51,7 @@
 
 <style>
 body{
-    background-color: darkcyan;
+    background-color: turquoise;
     height: 50vh;
 }
 .counter {
@@ -63,9 +62,12 @@ flex-direction: column;
 }
 .counternum{
     font-size: 3em;
+    color: purple;
+
 }
 .cube-root{
     font-size: 2rem;
+    color: purple;
 
 }
 
@@ -82,5 +84,63 @@ flex-direction: column;
 }
 .set-value{
     color: cadetblue;
+    border-radius: 10px;
+    width: 120px;
+    margin-left: 20px;   
+
 }
+.red{
+    color: red;
+}
+input{
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+@media  only screen and (max-width: 320px) {
+    body{
+    background-color: turquoise;
+    height: 50vh;
+}
+.counter {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.counternum{
+    font-size: 2em;
+    color: purple;
+
+}
+.cube-root{
+    font-size: 1.5em;
+    color: purple;
+
+}
+
+  .btn{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+justify-content: center;
+/* flex-direction: column; */
+    width: 50%;
+    color: cadetblue;
+    margin-top: 2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.btn-click{
+    width: 100%;
+    color: cadetblue;
+    margin-left: 2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+   
+   
+} 
 </style>
