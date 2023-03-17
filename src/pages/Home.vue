@@ -5,17 +5,15 @@
 </template> -->
 
 <template>
-  <div class="contact">
-  <div>  counter : {{ counter }}</div> <br>
-  <div>
-    <button @click="increment">+</button>
-    <button @click="reset">reset</button>
-    <button>+</button>
-
-  </div>
+  <div class="home">
+    <h1 class="counter-head"> Counter App</h1>
+    <p class="counter-p"> Counter app created with vue js triggers increment, decrement,
+       reset and setValue with the use of composables and Vuex state managment
+        that store function for global use</p>
+  
   </div>
 </template>
-
+<!-- 
 
 <script >
 export default {
@@ -35,7 +33,7 @@ method: {
 }
 
 
-</script>
+</script> -->
 
 
 
@@ -47,11 +45,19 @@ method: {
 
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.home {
+  margin-top: 4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.counter-head{
+  font-size: 3rem ;
+}
+.counter-p{
+  font-size: 1.5rem ;
+  padding: 20px;
+
 }
 </style>

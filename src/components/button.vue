@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="home">
         <img alt="vuelogo" src="../assets/logo.png">
         <div :style="{color:$store.state.colorCode}" class="counter">
@@ -31,4 +31,4 @@
     }
   }
   </script>
-  
+   -->
