@@ -41,7 +41,7 @@ commit ('setValue', value)},
 
 getters: {
     counterSquared (state){
-        return state.counter * state.counter
+        return state.counter * state.counter * state.counter
     }
 },
 modules: {
