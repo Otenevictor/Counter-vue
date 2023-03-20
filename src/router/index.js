@@ -17,11 +17,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../pages/Counter.vue')
     },
-    {
-      path: '/notfound',
-      name: 'NotFound',
-      component: () => import('../pages/NotFound.vue')
-    },
+    // {
+    //   path: '/notfound',
+    //   name: 'NotFound',
+    //   component: () => import('../pages/NotFound.vue')
+    // },
     {
       path: '/:pathMatch(.*)*',
       name: 'notfound',

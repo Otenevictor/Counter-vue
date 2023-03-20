@@ -56,6 +56,7 @@ body{
 }
 .counter {
 display: flex;
+margin-top: 4rem;
 align-items: center;
 justify-content: center;
 flex-direction: column;
@@ -98,7 +99,7 @@ input{
 }
 
 
-@media  only screen and (max-width: 320px) {
+@media  only screen and (max-width: 800px) {
     body{
     background-color: turquoise;
     height: 50vh;
@@ -131,6 +132,9 @@ justify-content: center;
     margin-top: 2rem;
     font-size: 2rem;
     border-radius: 10px;
+}
+.btn-click :hover{
+    background-color: blueviolet;
 }
 .btn-click{
     width: 100%;

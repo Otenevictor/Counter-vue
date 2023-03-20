@@ -39,10 +39,10 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 body{
   background-color: cadetblue;
-  color: antiquewhite;
+  /* color: antiquewhite; */
 }
 .home-counter {
-  color: cadetblue;
+  color: purple;
   margin-left: 20px;
   font-size: 2rem;
   text-decoration: none;
@@ -50,10 +50,16 @@ body{
 .fixed-bt{
   position: relative;
 }
-@media  only screen and (max-width: 320px) {
+@media  only screen and (max-width: 800px) {
     body{
     background-color: turquoise;
     height: 50vh;
+}
+.home-counter {
+  color: purple;
+  margin-left: 20px;
+  font-size: 1rem;
+  text-decoration: none;
 }
 }
 </style>
