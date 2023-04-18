@@ -60,6 +60,7 @@ margin-top: 4rem;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+background-color: gray;
 }
 .counternum{
     font-size: 3em;
